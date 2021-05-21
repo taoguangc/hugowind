@@ -1,0 +1,46 @@
+{{ if .IsHome }}
+<footer class="w-full flex flex-col" data-bg="#000">
+{{ else }}
+<footer class="w-full flex flex-col bg-black">
+{{ end }}
+  <div class="container p-12">
+    <figure class="flex items-center">
+      <a href="{{ site.BaseURL }}" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="700">
+        {{ with site.Params.logo }}
+        <img src="{{ site.Params.logo_light | absURL }}" alt="{{site.Title}}" class="w-12">
+        {{ end }}
+      </a>
+      <figcaption class="hidden">emptyarea.com</figcaption>
+    </figure>
+    <p class="mx-auto max-w-2xl py-48 text-gray-300 text-2xl lg:text-4xl font-extralight leading-relaxed lg:leading-relaxed z-10" data-sal="slide-up-2" data-sal-duration="1000">If you want a great-to-work-with developer to help create websites people really enjoy, get in touch.</p>
+    <small class="text-white">
+      {{ .Site.Copyright }}
+      <a href="{{ .Site.BaseURL }}" target="_blank" class="underline">{{ .Site.Params.author }}</a>
+      •
+    </small>
+  </div>
+</footer>
+{{- $appJS := resources.Get "js/app.js" | minify }}
+{{- $customJS := resources.Get "js/custom.js" | minify }}
+{{- $slice := slice $appJS }}
+{{- if $customJS }}
+{{- $slice = $slice | append $customJS }}
+{{- end }}
+{{- $bundleJS := $slice | resources.Concat "js/bundle.js" }}
+{{- $bundleJS = printf "%s?v=%d" $bundleJS.RelPermalink now.Unix }}
+<script src="{{ $bundleJS | safeHTML }}"></script>
+{{ if .IsHome }}
+<script>
+const sections = [...document.getElementsByTagName("section"), document.getElementsByTagName("footer")[0]]
+window.addEventListener("scroll", function () {
+  const scrollFromTop = window.pageYOffset
+  for (let i = 0; sections.length > i; i++) {
+    const half = window.innerHeight / 2
+    if (scrollFromTop < sections[i].offsetTop + half) {
+      document.body.style.backgroundColor = sections[i].getAttribute("data-bg")
+      break
+    }
+  }
+})
+</script>
+{{ end }}

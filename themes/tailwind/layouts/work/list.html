@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+<article class="my-48 mx-auto container px-8">
+  <h1 class="text-left text-7xl font-medium tracking-normal uppercase mb-24">{{ .Params.title }}</h1>
+  <div class="flex flex-wrap items-center -mx-8">
+    {{ range (where $.Site.RegularPages "Type" "work").ByDate.Reverse }}
+    <div class="p-8 sm:w-1/2">
+      <a class="text-base block duration-700 transform-gpu hover:-translate-y-4" href="{{ .Permalink }}">
+        <img src="{{ .Params.thumb | absURL }}" class="border border-gray-300 shadow-xl hover:shadow-2xl" alt="work-thumb" />
+        <h3 class="mt-2 text-lg font-normal">
+          {{ .Title }}
+        </h3>
+      </a>
+    </div>
+    {{ end }}
+  </div>
+
+  {{ .Content }}
+</article>
+
+{{ end }}

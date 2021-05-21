@@ -1,0 +1,13 @@
+---
+title: "About"
+date: 2021-04-13T14:45:34+08:00
+avatar: "images/about/img_about.jpg"
+services: ["Web design", "Front-End development", "User Interface design", "User experience design", "Host deployment / Domain pointing", "JS/CSS Animation"]
+draft: false
+---
+
+I'm a UI/UX designer and front end developer from hangzhou, china. I have been working with clients from around the globe creating bespoke websites, brands.
+
+Whether you are looking for a new website, developing your brand identity, or navigating the world of SEO, I'm here to help.
+
+Our passion is working in collaboration with our clients. To see businesses grow with creative ideas supporting their own position in the market. Whether it’s online or offline, we want you to achieve your business goals.

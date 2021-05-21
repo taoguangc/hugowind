@@ -1,0 +1,52 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "EmptyArea"
+theme = "tailwind"
+copyright = "Copyright © 2021 Powered by ❤ by "
+assetDir = "static/uploads"
+
+# css plugins
+[[params.plugins.css]]
+link = "plugins/tailwindcss/style.css"
+
+# js plugin
+[[params.plugins.js]]
+link = "plugins/alpine/alpine.js"
+
+
+# menu
+[[menu.main]]
+URL = "/"
+name = "Home"
+weight = 1
+
+[[menu.main]]
+URL = "/work/"
+name = "Work"
+weight = 2
+
+[[menu.main]]
+URL = "/about/"
+name = "About"
+weight = 3
+
+
+# default parameters
+[params]
+home = "Home"
+logo = "images/logo-emptyarea.svg"
+logo_light = "images/logo-light.svg"
+# theme color
+theme_color = "#41228e"
+# contact info
+phone = "+880 2544 658 256"
+email = "steve.fruits@email.com"
+address = "125/A, CA Commercial Area, California, USA"
+# meta description
+author = "Jeffrey Qian"
+description = "This is meta description"
+# google analytics
+google_analytics_id = "" # Your ID
+# copyright
+
+imageWidths = [1440, 960, 600]
