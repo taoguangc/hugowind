@@ -32018,7 +32018,7 @@ article p {
   margin-bottom: 1.5rem;
 }
 
-article li {
+ul.services li {
   background-repeat: no-repeat;
   font-size: 1.25rem;
   line-height: 1.75rem;
