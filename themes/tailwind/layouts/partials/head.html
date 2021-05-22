@@ -28,7 +28,7 @@
 {{- if .Site.IsServer }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
 {{- else }}
-  {{- $styles := $css | minify | resources.PostProcess }}
+  {{- $styles := $css | resources.PostProcess | minify }}
   {{- $styles = printf "%s?v=%d" $styles.RelPermalink now.Unix }}
   <link rel="stylesheet" href="{{ $styles }}">
 {{- end }}
