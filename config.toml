@@ -1,4 +1,4 @@
-baseURL = "https://hugo-wind.netlify.app/"
+baseURL = "https://emptyarea.com/"
 languageCode = "en-us"
 title = "emptyarea"
 theme = "tailwind"
