@@ -1,6 +1,6 @@
-baseURL = "http://example.org/"
+baseURL = "https://hugo-wind.netlify.app/"
 languageCode = "en-us"
-title = "EmptyArea"
+title = "emptyarea"
 theme = "tailwind"
 copyright = "Copyright © 2021 Powered by ❤ by "
 assetDir = "static/uploads"
