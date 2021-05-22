@@ -5,14 +5,6 @@ theme = "tailwind"
 copyright = "Copyright © 2021 Powered by ❤ by "
 assetDir = "static/uploads"
 
-# css plugins
-[[params.plugins.css]]
-link = "plugins/tailwindcss/style.css"
-
-# js plugin
-[[params.plugins.js]]
-link = "plugins/alpine/alpine.js"
-
 
 # menu
 [[menu.main]]
@@ -36,11 +28,9 @@ weight = 3
 home = "Home"
 logo = "images/logo-emptyarea.svg"
 logo_light = "images/logo-light.svg"
-# theme color
-theme_color = "#41228e"
 # contact info
 phone = "+880 2544 658 256"
-email = "steve.fruits@email.com"
+email = "taoguangc@gmail.com"
 address = "125/A, CA Commercial Area, California, USA"
 # meta description
 author = "Jeffrey Qian"
