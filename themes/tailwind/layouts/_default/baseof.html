@@ -32,7 +32,7 @@
 {{- else }}
   {{- $styles := $css | minify | resources.PostProcess }}
   {{- $styles = printf "%s?v=%d" $styles.RelPermalink now.Unix }}
-  <link rel="stylesheet" href="{{ $styles.Permalink }}">
+  <link rel="stylesheet" href="{{ $styles }}">
 {{- end }}
 
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
