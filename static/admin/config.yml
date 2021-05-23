@@ -18,16 +18,16 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'pages'
     label: 'Pages'
-      files:
-        - file: 'site/content/_index.md'
-          label: 'Home Page'
-          name: 'home'
-          fields:
-            - { label: 'Title', name: 'title', widget: 'string' }
-            - { label: 'Images', name: 'images', widget: 'image' }
-            - label: 'Images'
-              name: 'images'
-              widget: 'image'
-              media_library:
-                config:
-                  multiple: true
+    files:
+      - file: 'site/content/_index.md'
+        label: 'Home Page'
+        name: 'home'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Images', name: 'images', widget: 'image' }
+          - label: 'Images'
+            name: 'images'
+            widget: 'image'
+            media_library:
+              config:
+                multiple: true
