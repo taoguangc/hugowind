@@ -23,6 +23,11 @@ collections:
         label: "Home Page"
         name: "home"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string}
-          - {label: Image, name: image, widget: image}
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Images', name: 'images', widget: 'image' }
+          - label: "Images"
+            name: "images"
+            widget: "image"
+            media_library:
+              config:
+                multiple: true
