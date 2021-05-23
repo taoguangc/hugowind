@@ -17,17 +17,17 @@ collections:
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: "pages"
-  label: "Pages"
-    files:
-      - file: "site/content/_index.md"
-        label: "Home Page"
-        name: "home"
-        fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Images', name: 'images', widget: 'image' }
-          - label: "Images"
-            name: "images"
-            widget: "image"
-            media_library:
-              config:
-                multiple: true
+    label: "Pages"
+      files:
+        - file: "site/content/_index.md"
+          label: "Home Page"
+          name: "home"
+          fields:
+            - { label: 'Title', name: 'title', widget: 'string' }
+            - { label: 'Images', name: 'images', widget: 'image' }
+            - label: "Images"
+              name: "images"
+              widget: "image"
+              media_library:
+                config:
+                  multiple: true
