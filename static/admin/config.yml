@@ -25,9 +25,9 @@ collections:
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
-      - file: "site/content/about/_index.md"
-        label: "About Page"
-        name: "about"
+      - file: 'site/content/about/_index.md'
+        label: 'About Page'
+        name: 'about'
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Avatar', name: 'avatar', widget: 'image' }
