@@ -24,10 +24,10 @@ collections:
         name: 'home'
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Images', name: 'images', widget: 'image' }
           - label: 'Images'
             name: 'images'
             widget: 'image'
             media_library:
               config:
                 multiple: true
+          - { label: 'Body', name: 'body', widget: 'markdown' }
