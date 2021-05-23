@@ -24,6 +24,7 @@ collections:
         name: 'home'
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Description', name: 'description', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
       - file: 'content/about/_index.md'
         label: 'About Page'
@@ -31,6 +32,7 @@ collections:
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Avatar', name: 'avatar', widget: 'image' }
+          - { label: 'Description', name: 'description', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
       - file: 'content/work/_index.md'
         label: 'Work Page'

@@ -2,6 +2,7 @@
 title: "About"
 date: 2021-04-13T14:45:34+08:00
 avatar: "images/about/img_about.jpg"
+description: "This is about page."
 services: ["Web design", "Front-End development", "User Interface design", "User experience design", "Host deployment / Domain pointing", "JS/CSS Animation"]
 draft: false
 ---

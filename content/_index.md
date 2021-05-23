@@ -1,6 +1,7 @@
 ---
 title: "EmptyArea"
 date: 2021-04-13T14:45:26+08:00
+description: "This is homepage."
 draft: false
 images:
   - "img/hero.jpg"
