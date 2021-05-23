@@ -19,20 +19,20 @@ collections:
   - name: 'pages'
     label: 'Pages'
     files:
-      - file: 'site/content/_index.md'
+      - file: 'content/_index.md'
         label: 'Home Page'
         name: 'home'
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
-      - file: 'site/content/about/_index.md'
+      - file: 'content/about/_index.md'
         label: 'About Page'
         name: 'about'
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Avatar', name: 'avatar', widget: 'image' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
-      - file: 'site/content/work/_index.md'
+      - file: 'content/work/_index.md'
         label: 'Work Page'
         name: 'work'
         fields:
