@@ -5,6 +5,7 @@ module.exports = {
       whitelist: [],
     },
   },
+  darkMode: false,
   theme: {
     container: {
       center: true,
@@ -37,8 +38,7 @@ module.exports = {
     },
   },
   variants: {
-    extend: {
-    },
+    extend: {},
   },
   plugins: [],
 };
