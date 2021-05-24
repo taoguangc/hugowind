@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "emptyarea"
 theme = "tailwind"
 copyright = "Copyright © 2021 Powered by ❤ by "
-assetDir = "static/uploads"
+assetDir = "static/img"
 
 
 # menu
@@ -29,7 +29,6 @@ home = "Home"
 logo = "images/logo-emptyarea.svg"
 logo_light = "images/logo-light.svg"
 # contact info
-phone = "+880 2544 658 256"
 email = "taoguangc@gmail.com"
 address = "125/A, CA Commercial Area, California, USA"
 # meta description

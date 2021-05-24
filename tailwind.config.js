@@ -1,6 +1,6 @@
 module.exports = {
   purge: {
-    content: ["./content/**/*.md","./themes/tailwind/layout/**/*.html"],
+    content: ["./content/**/*.md","./themes/tailwind/layouts/**/*.html"],
     options: {
       whitelist: [],
     },
@@ -38,7 +38,6 @@ module.exports = {
   },
   variants: {
     extend: {
-      translate: ['hover'],
     },
   },
   plugins: [],
