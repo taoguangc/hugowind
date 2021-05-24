@@ -20,13 +20,13 @@
     </small>
   </div>
 </footer>
-{{- $appJS := resources.Get "js/app.js" | minify }}
-{{- $customJS := resources.Get "js/custom.js" | minify }}
+{{- $appJS := resources.Get "js/app.js" }}
+{{- $customJS := resources.Get "js/custom.js" }}
 {{- $slice := slice $appJS }}
 {{- if $customJS }}
 {{- $slice = $slice | append $customJS }}
 {{- end }}
-{{- $bundleJS := $slice | resources.Concat "js/bundle.js" }}
+{{- $bundleJS := $slice | resources.Concat "js/bundle.js" | js.Build (dict "minify" true "target" "es2015") }}
 {{- $bundleJS = printf "%s?v=%d" $bundleJS.RelPermalink now.Unix }}
 <script src="{{ $bundleJS | safeHTML }}"></script>
 {{ if .IsHome }}

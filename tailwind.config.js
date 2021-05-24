@@ -1,6 +1,6 @@
 module.exports = {
   purge: {
-    content: ["./**/*.md","./**/*.html"],
+    content: ["./content/**/*.md","./themes/tailwind/layout/**/*.html"],
     options: {
       whitelist: [],
     },
