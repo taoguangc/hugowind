@@ -26,7 +26,7 @@
 <link rel="icon" type="image/svg+xml" href="/images/icons/favicon.svg" sizes="16x16" />
 <link rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png" sizes="180x180" />
 
-{{- $css := resources.Get "css/styles.css" | postCSS }}
+{{- $css := resources.Get "css/styles.css" | resources.postCSS }}
 {{- if .Site.IsServer }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
 {{- else }}
