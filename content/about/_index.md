@@ -12,7 +12,7 @@ services:
 draft: false
 ---
 ### Hi, I'm Jeffrey Q
-I'm a front end developer and UI/UX designer from Hangzhou, China. I have been working with clients from around the globe creating bespoke websites, brands.
+I'm a front end developer and UI/UX designer from China. I have been working with clients from around the globe creating bespoke websites, brands.
 
 Whether you are looking for a new website, developing your brand identity, or navigating the world of SEO, I'm here to help.
 
