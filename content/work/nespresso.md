@@ -1,32 +1,22 @@
 ---
-title: "Nespresso After Sale"
-date: 2021-05-12T12:14:34+06:00
-thumb: "images/work/nespresso-thumb.jpg"
-images:
-  - "images/work/nespresso-thumb.jpg"
-client: "Nespresso"
-project_url : "https://themefisher.com/"
-categories: ["Design","Code"]
-description: "This is meta description."
 draft: false
+project_url: https://themefisher.com/
+client: Nespresso
+date: 2021-05-12T12:14:34+06:00
+thumb: images/work/nespresso-thumb.jpg
+title: Nespresso product after sale
+images:
+  - images/work/nespresso-thumb.jpg
+categories:
+  - Design
+  - Code
+description: This is meta description.
 ---
-
-#### Project Requirements
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
-
 
 #### Project Details
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.
+Nestlé Nespresso S.A., trading as Nespresso, is an operating unit of the Nestlé Group, based in Lausanne, Switzerland. Nespresso machines brew espresso and coffee from coffee capsules (or pods in machines for home or professional use), a type of pre-apportioned single-use container of ground coffee beans, sometimes with added flavorings. Once inserted into a machine, the capsules are pierced and processed, water is then forced against a heating element at high pressure meaning that only the quantity for a single cup is warmed. Nespresso is a premium price coffee, and by 2011 had annual sales in excess of 3 billion Swiss francs. The word Nespresso is a portmanteau of Nestlé and Espresso, a common mechanic used across other Nestlé brands (Nescafé, BabyNes, Nesquik).
+
+This project is nespresso product's after sale page.
+
+
