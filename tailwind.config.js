@@ -1,6 +1,7 @@
 module.exports = {
   purge: {
-    content: ["./content/**/*.md","./themes/tailwind/layouts/**/*.html"],
+    enabled: process.env.HUGO_ENVIRONMENT === "production",
+    content: ["./content/**/*.md", "./content/**/*.html", "./themes/tailwind/layouts/**/*.html"],
     options: {
       whitelist: [],
     },
