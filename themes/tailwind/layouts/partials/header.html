@@ -17,8 +17,10 @@
         {{ $active = or $active (eq .Name $current.Title) }}     
         {{ $active = or $active (and (eq (trim (path.Dir .URL) "/") $current.Section) (ne $current.Section "")) }}
         <li class="relative">
-          <a class="block" href="{{ .URL | absURL }}">{{ .Name }}</a>
-          {{ if $active }}<div class="absolute border-b border-black w-full" aria-hidden="true"></div>{{ end }}
+          <a class="block group" href="{{ .URL | absURL }}">
+            {{ .Name }}
+            <div class="absolute border-b border-black transition-all duration-500 transform group-hover:w-full{{ if $active }} w-full{{else}} w-0{{ end }}" aria-hidden="true"></div>
+          </a>
         </li>
         {{ end }}
       </ul>
@@ -42,8 +44,10 @@
         {{ $active = or $active (eq .Name $current.Title) }}     
         {{ $active = or $active (and (eq (trim (path.Dir .URL) "/") $current.Section) (ne $current.Section "")) }}
         <li class="relative my-8 text-xl" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="{{ mul $i 200 }}">
-          <a class="block" href="{{ .URL | absURL }}">{{ .Name }}</a>
-          {{ if $active }}<div class="absolute border-b border-white w-full" aria-hidden="true"></div>{{ end }}
+          <a class="block group" href="{{ .URL | absURL }}">
+            {{ .Name }}
+            <div class="absolute border-b border-black transition-all duration-500 transform group-hover:w-full{{ if $active }} w-full{{else}} w-0{{ end }}" aria-hidden="true"></div>
+          </a>
         </li>
         {{ end }}
       </ul>

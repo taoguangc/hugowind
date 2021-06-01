@@ -36,10 +36,15 @@ module.exports = {
         '14': '3.5rem',
         '16': '4rem',
       },
+      transitionProperty: {
+        'width': 'width',
+      }
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      width: ['group-hover'],
+    },
   },
   plugins: [],
 };
