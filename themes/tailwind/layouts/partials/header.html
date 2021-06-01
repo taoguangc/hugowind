@@ -46,7 +46,7 @@
         <li class="relative my-8 text-xl" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="{{ mul $i 200 }}">
           <a class="block group" href="{{ .URL | absURL }}">
             {{ .Name }}
-            <div class="absolute border-b border-black transition-all duration-500 transform group-hover:w-full{{ if $active }} w-full{{else}} w-0{{ end }}" aria-hidden="true"></div>
+            {{ if $active }}<div class="absolute border-b border-white transition-all duration-500 transform group-hover:w-full w-full" aria-hidden="true"></div>{{ end }}
           </a>
         </li>
         {{ end }}
