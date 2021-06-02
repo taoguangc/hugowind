@@ -35,7 +35,7 @@
   <link rel="stylesheet" href="{{ $styles }}">
 {{- end }}
 </head>
-<body>
+<body x-data="{ toTop: false }" @scroll.window="toTop = ( window.pageYOffset > window.innerHeight) ? true : false">
 {{ partial "header.html" . -}}
 {{ block "main" . }}{{- end -}}
 {{ partial "footer.html" . -}}
