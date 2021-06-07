@@ -5,7 +5,7 @@ date: 2021-05-12T12:14:34+06:00
 description: This is meta description.
 client: Nespresso
 project_url: ""
-thumb: images/work/nespresso-thumb.jpg
+thumb: images/work/nespresso-thumb.webp
 images:
   - images/work/nespresso-thumb.jpg
 categories:
@@ -19,4 +19,4 @@ Nestl√© Nespresso S.A., trading as Nespresso, is an operating unit of the Nestl√
 
 This project is nespresso product's after sale page.
 
-
+

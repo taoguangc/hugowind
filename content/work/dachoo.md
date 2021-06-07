@@ -1,7 +1,7 @@
 ---
 title: "DACHOO"
 date: 2020-03-20T12:14:34+06:00
-thumb: "images/work/dachoo-thumb.jpg"
+thumb: "images/work/dachoo-thumb.webp"
 images:
  - "images/work/dachoo-1.jpg"
 client: "Robam"

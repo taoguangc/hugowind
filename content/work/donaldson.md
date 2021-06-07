@@ -1,7 +1,7 @@
 ---
 title: "Donaldson"
 date: 2019-06-20T12:14:34+06:00
-thumb: "images/work/donaldson-thumb.jpg"
+thumb: "images/work/donaldson-thumb.webp"
 images:
  - "images/work/donaldson-1.jpg"
  - "images/work/donaldson-2.jpg"
