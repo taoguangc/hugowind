@@ -1,14 +1,15 @@
 ---
-title: "DACHOO"
-date: 2020-03-20T12:14:34+06:00
-thumb: "images/work/dachoo-thumb.webp"
-images:
- - "images/work/dachoo-1.jpg"
-client: "Robam"
-project_url : "https://dachoo.robam.com/"
-categories: ["Design","Code"]
-description: "This is meta description."
 draft: false
+title: DACHOO
+date: 2020-03-20T12:14:34+06:00
+description: This is meta description.
+images: /uploads/dachoo-1.jpg
+client: Robam
+project_url: https://dachoo.robam.com/
+thumb: images/work/dachoo-thumb.webp
+categories:
+  - Design
+  - Code
 ---
 
 #### Project Details
