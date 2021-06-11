@@ -9,8 +9,6 @@ collections:
     folder: 'content/work'
     create: true
     slug: '{{slug}}'
-    media_folder: 'content/uploads/work'
-    public_folder: '/uploads/work'
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
