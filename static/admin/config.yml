@@ -19,14 +19,8 @@ collections:
         name: 'images'
         widget: 'object'
         fields: 
-          - {label: 'image', name: 'image', widget: 'image'}
-      - label: 'Address'
-        name: 'address'
-        widget: 'object'
-        fields: 
-          - {label: 'Street Address', name: 'street', widget: 'string'}
-          - {label: 'City', name: 'city', widget: 'string'}
-          - {label: 'Postal Code', name: 'post-code', widget: 'string'}
+          - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Categories', name: 'categories', widget: 'list' }
       - { label: 'Test', name: 'test', widget: 'string' }
       - { label: 'Client', name: 'client', widget: 'string' }
       - { label: 'Project URL', name: 'project_url', widget: 'string', required: false }
@@ -42,7 +36,6 @@ collections:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Description', name: 'description', widget: 'string' }
           - { label: 'Images', name: 'images', widget: 'image' }
-          - { label: 'Test', name: 'test', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
       - file: 'content/about/_index.md'
         label: 'About Page'
