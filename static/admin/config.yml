@@ -2,14 +2,14 @@ backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
 media_folder: 'content/uploads'
-public_folder: '/uploads'
+public_folder: ''
 collections:
   - name: 'work'
     label: 'Work'
     folder: 'content/work'
     create: true
     media_folder: '../uploads/work/{{slug}}'
-    public_folder: '/work/{{slug}}'
+    public_folder: ''
     slug: '{{slug}}'
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
