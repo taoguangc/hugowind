@@ -21,10 +21,11 @@
   
   <section class="bg-gray-100">
     <div class="mx-auto my-24 max-w-4xl flex flex-col">
+      {{ .Aliases }}
       {{ $headless := .Site.GetPage "/uploads" }}
       {{ range .Params.images }}
-      {{range ($headless.Resources.Match .)}}
-        <img src="{{ .RelPermalink }}" class="border border-gray-400 shadow-xl hover:shadow-2xl" alt="work-thumb" loading="lazy" decoding="async">
+      {{range ($headless.Resources.Match (replace . "/uploads/work/" ""))}}
+       <img src="{{ .RelPermalink }}" class="border border-gray-400 shadow-xl hover:shadow-2xl" alt="work-thumb" loading="lazy" decoding="async">
       {{end}}
       {{end}}
     </div>
