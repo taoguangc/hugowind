@@ -20,7 +20,6 @@ collections:
         widget: 'object'
         fields: 
           - { label: 'Image', name: 'image', widget: 'image' }
-      - { label: 'Categories', name: 'categories', widget: 'list' }
       - { label: 'Test', name: 'test', widget: 'string' }
       - { label: 'Client', name: 'client', widget: 'string' }
       - { label: 'Project URL', name: 'project_url', widget: 'string', required: false }
