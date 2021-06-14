@@ -15,11 +15,19 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
-      - label: 'Images'
-        name: 'images'
+      - name: 'images'
+        label: 'Images'
         widget: 'object'
         fields: 
           - { label: 'Image', name: 'image', widget: 'image' }
+
+      - name: 'videos'
+        label: 'Videos'
+        widget: list
+        fields:
+          - { label: 'Name', name: 'name', widget: 'string' }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'URL', name: 'URL', widget: 'string' }
       - { label: 'Test', name: 'test', widget: 'string' }
       - { label: 'Client', name: 'client', widget: 'string' }
       - { label: 'Project URL', name: 'project_url', widget: 'string', required: false }
