@@ -1,6 +1,7 @@
 ---
 title: "COLMO"
 date: 2019-04-20T12:14:34+06:00
+description: "This is meta description."
 thumb: "/uploads/work/colmo-thumb.webp"
 images:
   - "/uploads/colmo-1.jpg"
@@ -8,7 +9,6 @@ images:
 client: "COLMO"
 project_url : "https://clomo.com/"
 categories: ["Design","Code"]
-description: "This is meta description."
 draft: false
 ---
 
