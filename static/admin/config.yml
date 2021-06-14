@@ -18,11 +18,12 @@ collections:
       - name: 'images'
         label: 'Images'
         widget: 'list'
+        required: false
         fields: 
           - { label: 'Image', name: 'image', widget: 'image' }
-      - { label: 'Client', name: 'client', widget: 'string' }
+      - { label: 'Client', name: 'client', widget: 'string', required: false }
       - { label: 'Project URL', name: 'project_url', widget: 'string', required: false }
-      - { label: 'Categories', name: 'categories', widget: 'list' }
+      - { label: 'Categories', name: 'categories', widget: 'list', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'pages'
     label: 'Pages'
