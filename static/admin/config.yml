@@ -21,6 +21,14 @@ collections:
         collapsed: true
         fields: 
           - {label: "image", name: "image", widget: "image"}
+      - label: "Address"
+        name: "address"
+        widget: "object"
+        collapsed: true
+        fields: 
+          - {label: "Street Address", name: "street", widget: "string"}
+          - {label: "City", name: "city", widget: "string"}
+          - {label: "Postal Code", name: "post-code", widget: "string"}
       - { label: 'Client', name: 'client', widget: 'string' }
       - { label: 'Project URL', name: 'project_url', widget: 'string', required: false }
       - { label: 'Categories', name: 'categories', widget: 'list' }
