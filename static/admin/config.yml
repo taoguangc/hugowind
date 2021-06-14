@@ -8,6 +8,8 @@ collections:
     label: 'Work'
     folder: 'content/work'
     create: true
+    media_folder: '../uploads/work'
+    public_folder: '/uploads/work'
     slug: '{{slug}}'
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
