@@ -18,13 +18,11 @@ collections:
       - label: 'Images'
         name: 'images'
         widget: 'object'
-        collapsed: true
         fields: 
           - {label: 'image', name: 'image', widget: 'image'}
       - label: 'Address'
         name: 'address'
         widget: 'object'
-        collapsed: true
         fields: 
           - {label: 'Street Address', name: 'street', widget: 'string'}
           - {label: 'City', name: 'city', widget: 'string'}
