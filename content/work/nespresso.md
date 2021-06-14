@@ -7,7 +7,7 @@ client: Nespresso
 project_url: ""
 thumb: /uploads/work/nespresso-thumb.webp
 images:
-  - /uploads/nespresso-thumb.jpg
+  - image: /uploads/nespresso-thumb.jpg
 categories:
   - Design
   - Code

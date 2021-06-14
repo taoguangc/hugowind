@@ -4,11 +4,13 @@ date: 2019-04-20T12:14:34+06:00
 description: "This is meta description."
 thumb: "/uploads/work/colmo-thumb.webp"
 images:
-  - "/uploads/colmo-1.jpg"
-  - "/uploads/colmo-2.png"
+  - image: "/uploads/colmo-1.jpg"
+  - image: "/uploads/colmo-2.png"
 client: "COLMO"
 project_url : "https://clomo.com/"
-categories: ["Design","Code"]
+categories:
+  - Design
+  - Code
 draft: false
 ---
 

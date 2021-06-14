@@ -8,7 +8,7 @@ images:
 client: test
 project_url: test.dev
 categories:
-  - design
-  - code
+  - Design
+  - Code
 ---
 adhdasfhgfdsgfdsh
