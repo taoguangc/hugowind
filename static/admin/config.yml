@@ -44,6 +44,7 @@ collections:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Description', name: 'description', widget: 'string' }
           - { label: 'Images', name: 'images', widget: 'image' }
+          - { label: 'Test', name: 'test', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
       - file: 'content/about/_index.md'
         label: 'About Page'
