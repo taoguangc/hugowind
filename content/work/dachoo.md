@@ -1,7 +1,7 @@
 ---
 title: DACHOO
 date: 2020-03-20T12:14:34+06:00
-thumb: /uploads/dachoo-thumb.webp
+thumb: /uploads/work/dachoo-thumb.webp
 description: This is meta description.
 images:
   - /uploads/dachoo-1.jpg

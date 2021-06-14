@@ -1,7 +1,7 @@
 ---
 title: "Midea Smart Home"
 date: 2019-01-20T12:14:34+06:00
-thumb: "/uploads/msmart-thumb.webp"
+thumb: "/uploads/work/msmart-thumb.webp"
 images:
   - "/uploads/msmart-thumb.jpg"
 client: "Midea"

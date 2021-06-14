@@ -6,7 +6,12 @@
     {{ range (where $.Site.RegularPages "Type" "work").ByDate.Reverse }}
     <div class="p-8 sm:w-1/2">
       <a class="text-base block duration-700 transform-gpu hover:-translate-y-4" href="{{ .Permalink }}">
-        <img src="{{ .Params.thumb | absURL }}" class="border border-gray-300 shadow-xl hover:shadow-2xl" alt="work-thumb" />
+        {{ $headless := .Site.GetPage "/uploads" }}
+        {{ with .Params.thumb }}
+        {{range ($headless.Resources.Match (replace . "/uploads/work/" "*"))}}
+        <img src="{{ .RelPermalink }}" class="border border-gray-300 shadow-xl hover:shadow-2xl" alt="work-thumb" />
+        {{ end }}
+        {{ end }}
         <h3 class="mt-2 text-lg font-normal">
           {{ .Title }}
         </h3>

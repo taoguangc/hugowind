@@ -5,7 +5,7 @@ date: 2021-05-12T12:14:34+06:00
 description: This is meta description.
 client: Nespresso
 project_url: ""
-thumb: /uploads/nespresso-thumb.webp
+thumb: /uploads/work/nespresso-thumb.webp
 images:
   - /uploads/nespresso-thumb.jpg
 categories:

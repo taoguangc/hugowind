@@ -1,7 +1,7 @@
 ---
 title: "COLMO"
 date: 2019-04-20T12:14:34+06:00
-thumb: "/uploads/colmo-thumb.webp"
+thumb: "/uploads/work/colmo-thumb.webp"
 images:
   - "/uploads/colmo-1.jpg"
   - "/uploads/colmo-2.png"

@@ -1,7 +1,7 @@
 ---
 title: "VV3C"
 date: 2019-02-16T12:14:34+06:00
-thumb: "/uploads/vv3c-thumb.webp"
+thumb: "/uploads/work/vv3c-thumb.webp"
 images:
   - "/uploads/vv3c-1.jpg"
 client: "VV3C"

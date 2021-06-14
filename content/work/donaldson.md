@@ -1,15 +1,15 @@
 ---
-draft: false
 title: Donaldson
 date: 2019-06-20T12:14:34+06:00
 description: This is meta description.
-images: /uploads/work/donaldson/donaldson-3.jpg
+images: /uploads/work/donaldson-3.jpg
 client: Donaldson
 project_url: https://donaldson.cn/
-thumb: /uploads/donaldson-thumb.webp
+thumb: /uploads/work/donaldson-thumb.webp
 categories:
   - Design
   - Code
+draft: false
 ---
 
 #### Project Details
