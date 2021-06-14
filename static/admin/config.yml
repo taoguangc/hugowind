@@ -29,6 +29,7 @@ collections:
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Description', name: 'description', widget: 'string' }
+          - { label: 'Images', name: 'images', widget: 'image' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
       - file: 'content/about/_index.md'
         label: 'About Page'
