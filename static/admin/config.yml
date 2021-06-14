@@ -9,7 +9,7 @@ collections:
     folder: 'content/work'
     create: true
     media_folder: '../uploads/work/{{slug}}'
-    public_folder: '/uploads/work/{{slug}}'
+    public_folder: ''
     slug: '{{slug}}'
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
