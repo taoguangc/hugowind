@@ -1,10 +1,10 @@
 ---
 title: "COLMO"
 date: 2019-04-20T12:14:34+06:00
-thumb: "images/work/colmo-thumb.webp"
+thumb: "/uploads/colmo-thumb.webp"
 images:
-  - "images/work/colmo-1.jpg"
-  - "images/work/colmo-2.png"
+  - "/uploads/colmo-1.jpg"
+  - "/uploads/colmo-2.png"
 client: "COLMO"
 project_url : "https://clomo.com/"
 categories: ["Design","Code"]

@@ -1,15 +1,17 @@
 ---
-draft: false
 title: DACHOO
 date: 2020-03-20T12:14:34+06:00
+thumb: /uploads/dachoo-thumb.webp
 description: This is meta description.
-images: /uploads/dachoo-1.jpg
+images:
+  - /uploads/dachoo-1.jpg
+  - /uploads/dachoo-2.jpg
 client: Robam
 project_url: https://dachoo.robam.com/
-thumb: images/work/dachoo-thumb.webp
 categories:
   - Design
   - Code
+draft: false
 ---
 
 #### Project Details

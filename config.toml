@@ -26,8 +26,8 @@ weight = 3
 # default parameters
 [params]
 home = "Home"
-logo = "images/logo-emptyarea.svg"
-logo_light = "images/logo-light.svg"
+logo = "img/logo-emptyarea.svg"
+logo_light = "img/logo-light.svg"
 # contact info
 email = "taoguangc@gmail.com"
 address = "125/A, CA Commercial Area, California, USA"

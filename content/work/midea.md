@@ -1,9 +1,9 @@
 ---
 title: "Midea Smart Home"
 date: 2019-01-20T12:14:34+06:00
-thumb: "images/work/msmart-thumb.webp"
+thumb: "/uploads/msmart-thumb.webp"
 images:
-  - "images/work/msmart-thumb.jpg"
+  - "/uploads/msmart-thumb.jpg"
 client: "Midea"
 project_url : 
 categories: ["Design","Code"]

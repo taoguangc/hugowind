@@ -1,9 +1,9 @@
 ---
 title: "VV3C"
 date: 2019-02-16T12:14:34+06:00
-thumb: "images/work/vv3c-thumb.webp"
+thumb: "/uploads/vv3c-thumb.webp"
 images:
-  - "images/work/vv3c-1.jpg"
+  - "/uploads/vv3c-1.jpg"
 client: "VV3C"
 project_url : "http://vv3c.com/"
 categories: ["Design", "Code"]

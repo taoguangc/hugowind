@@ -1,12 +1,12 @@
 ---
 title: "Donaldson"
 date: 2019-06-20T12:14:34+06:00
-thumb: "images/work/donaldson-thumb.webp"
+thumb: "/uploads/donaldson-thumb.webp"
 images:
- - "images/work/donaldson-1.jpg"
- - "images/work/donaldson-2.jpg"
- - "images/work/donaldson-3.jpg"
- - "images/work/donaldson-4.jpg"
+ - "/uploads/donaldson-1.jpg"
+ - "/uploads/donaldson-2.jpg"
+ - "/uploads/donaldson-3.jpg"
+ - "/uploads/donaldson-4.jpg"
 client: "Donaldson"
 project_url : "https://donaldson.cn/"
 categories: ["Design","Code"]
