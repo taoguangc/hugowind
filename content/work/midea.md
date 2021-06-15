@@ -1,16 +1,16 @@
 ---
-title: "Midea Smart Home"
+draft: false
+title: Midea Smart Home
 date: 2019-01-20T12:14:34+06:00
-description: "This is meta description."
-thumb: "/uploads/work/msmart-thumb.webp"
+description: This is meta description.
 images:
-  - image: "/uploads/msmart-thumb.jpg"
-client: "Midea"
-project_url : 
+  - image: work/msmart-thumb.webp
+client: Midea
+project_url: null
+thumb: /uploads/work/msmart-thumb.webp
 categories:
   - Design
   - Code
-draft: false
 ---
 
 #### Project Details
