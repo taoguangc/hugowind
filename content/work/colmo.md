@@ -4,8 +4,8 @@ title: COLMO
 date: 2019-04-20T12:14:34+06:00
 description: This is meta description.
 images:
-  - image: colmo-1.webp
-  - image: colmo-2.webp
+  - image: work/colmo-1.webp
+  - image: work/colmo-2.webp
 client: COLMO
 project_url: https://clomo.com/
 thumb: /uploads/work/colmo-thumb.webp
