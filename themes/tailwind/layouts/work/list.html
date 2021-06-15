@@ -8,9 +8,9 @@
       <a class="text-base block duration-700 transform-gpu hover:-translate-y-4" href="{{ .Permalink }}">
         {{ $headless := .Site.GetPage "/uploads" }}
         {{ with .Params.thumb }}
-        {{range ($headless.Resources.Match (replace . "/uploads/work/" "*"))}}
-        <img src="{{ .RelPermalink }}" class="border border-gray-300 shadow-xl hover:shadow-2xl" alt="work-thumb" />
-        {{ end }}
+          {{range ($headless.Resources.Match .)}}
+            <img src="{{ .RelPermalink }}" class="border border-gray-300 shadow-xl hover:shadow-2xl" alt="work-thumb" />
+          {{ end }}
         {{ end }}
         <h3 class="mt-2 text-lg font-normal">
           {{ .Title }}
