@@ -4,7 +4,7 @@ title: Midea Smart Home
 date: 2019-01-20T12:14:34+06:00
 description: This is meta description.
 images:
-  - image: work/msmart-thumb.webp
+  - image: work/msmart-1.jpg
 client: Midea
 project_url: null
 thumb: /uploads/work/msmart-thumb.webp
