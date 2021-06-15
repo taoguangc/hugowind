@@ -1,7 +1,7 @@
 ---
 title: About
 date: 2021-04-13T14:45:34+08:00
-avatar: images/about/img_about.jpg
+avatar: img/about/img_about.jpg
 services:
   - Web design
   - Front-End development
