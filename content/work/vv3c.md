@@ -1,16 +1,16 @@
 ---
-title: "VV3C"
+draft: false
+title: VV3C
 date: 2019-02-16T12:14:34+06:00
-description: "This is meta description."
-thumb: "/uploads/work/vv3c-thumb.webp"
+description: This is meta description.
 images:
-  - image: "/uploads/vv3c-1.jpg"
-client: "VV3C"
-project_url : "http://vv3c.com/"
-categories: 
+  - image: work/vv3c-1.jpg
+client: VV3C
+project_url: http://vv3c.com/
+thumb: /uploads/work/vv3c-thumb.webp
+categories:
   - Design
   - Code
-draft: false
 ---
 
 #### Project Details
