@@ -32240,7 +32240,7 @@ h4 {
 }
 
 .btn {
-  background-image: url(../../images/arrow-right.svg);
+  background-image: url(../../img/arrow-right.svg);
   background-position: 110% 50%;
   background-size: auto 20%;
   background-repeat: no-repeat;
@@ -32299,7 +32299,7 @@ ul.services li {
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding-left: 1.5rem;
-  background-image: url(../../images/arrow-right.svg);
+  background-image: url(../../img/arrow-right.svg);
   background-size: auto 25%;
   background-position: 0 50%;
 }
