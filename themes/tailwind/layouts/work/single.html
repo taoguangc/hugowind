@@ -25,7 +25,7 @@
       {{ $headless := .Site.GetPage "/uploads" }}
       {{ range .Params.images }}
         {{ range . }}
-          {{ range $headless.Resources.Match (replace . "/uploads/" "") }}
+          {{ range $headless.Resources.Match . }}
             <img src="{{ .RelPermalink }}" class="mt-16 border border-gray-400 shadow-xl hover:shadow-2xl" alt="work-thumb" loading="lazy" decoding="async">
           {{end}}
         {{end}}
