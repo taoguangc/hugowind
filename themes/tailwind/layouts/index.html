@@ -24,9 +24,9 @@
       <a class="text-base block duration-700 transform-gpu hover:-translate-y-4" href="{{ .Permalink }}">
         {{ $headless := .Site.GetPage "/uploads" }}
         {{ with .Params.thumb }}
-        {{range ($headless.Resources.Match (replace . "/uploads/" ""))}}
-        <img src="{{ .RelPermalink }}" class="border border-gray-400 shadow-xl hover:shadow-2xl" alt="work-thumb" loading="lazy" decoding="async">
-        {{end}}
+          {{range ($headless.Resources.Match (replace . "/uploads/" ""))}}
+            <img src="{{ .RelPermalink }}" class="border border-gray-400 shadow-xl hover:shadow-2xl" alt="work-thumb" loading="lazy" decoding="async">
+          {{end}}
         {{end}}
         <h3 class="mt-2 text-lg font-normal">
           {{ .Title }}
