@@ -3,6 +3,7 @@ draft: false
 title: Donaldson
 date: 2019-06-20T12:14:34+06:00
 description: This is meta description.
+thumb: work/donaldson-thumb.webp
 images:
   - image: donaldson-1.jpg
   - image: donaldson-2.jpg
@@ -10,7 +11,6 @@ images:
   - image: donaldson-4.jpg
 client: Donaldson
 project_url: https://donaldson.cn/
-thumb: /uploads/work/donaldson-thumb.webp
 categories:
   - Design
   - Code
