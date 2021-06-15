@@ -1,17 +1,17 @@
 ---
-title: "COLMO"
+draft: false
+title: COLMO
 date: 2019-04-20T12:14:34+06:00
-description: "This is meta description."
-thumb: "/uploads/work/colmo-thumb.webp"
+description: This is meta description.
 images:
-  - image: "/uploads/colmo-1.jpg"
-  - image: "/uploads/colmo-2.png"
-client: "COLMO"
-project_url : "https://clomo.com/"
+  - image: colmo-1.webp
+  - image: colmo-2.webp
+client: COLMO
+project_url: https://clomo.com/
+thumb: /uploads/work/colmo-thumb.webp
 categories:
   - Design
   - Code
-draft: false
 ---
 
 #### Project Details
