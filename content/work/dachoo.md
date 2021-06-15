@@ -5,8 +5,7 @@ date: 2020-03-20T12:14:34+06:00
 description: This is meta description.
 thumb: work/dachoo-thumb.webp
 images:
-  - image: /uploads/work/dachoo-1.jpg
-  - image: /uploads/work/dachoo-2.jpg
+  - image: work/dachoo-1.jpg
 client: Robam
 project_url: https://dachoo.robam.com/
 categories:
