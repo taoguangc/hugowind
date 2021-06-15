@@ -3,11 +3,11 @@ draft: false
 title: Nespresso
 date: 2021-05-12T12:14:34+06:00
 description: This is meta description.
-client: Nespresso
-project_url: ""
-thumb: /uploads/work/nespresso-thumb.webp
+thumb: work/nespresso-thumb.webp
 images:
   - image: /uploads/nespresso-thumb.jpg
+client: Nespresso
+project_url: ""
 categories:
   - Design
   - Code
