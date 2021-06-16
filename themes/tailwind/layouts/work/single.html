@@ -25,8 +25,9 @@
       {{ $headless := .Site.GetPage "/uploads" }}
       {{ range .Params.images }}
         {{ range . }}
-          {{ range $headless.Resources.Match . }}
-            <img src="{{ .RelPermalink }}" class="mt-16 border border-gray-400 shadow-xl hover:shadow-2xl" alt="work-thumb" loading="lazy" decoding="async">
+          {{ range $image := $headless.Resources.Match . }}
+            {{ $r := $image.Resize "960x webp q75" }}
+            <img src="{{ $r.RelPermalink }}" class="mt-16 border border-gray-400 shadow-xl hover:shadow-2xl" alt="work-thumb" loading="lazy" decoding="async">
           {{end}}
         {{end}}
       {{end}}
