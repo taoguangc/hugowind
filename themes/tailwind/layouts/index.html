@@ -72,7 +72,9 @@
         <a href="{{ .url }}">
           <img 
           {{ range $image := $headless.Resources.Match (print "**" .image) }}
-          src="{{ .RelPermalink }}"
+          src="{{ .RelPermalink }}" 
+          width="{{ $image.Width }}" 
+          height="{{ $image.Height }}" 
           {{ end }} 
           alt="{{ .name }}" 
           loading="lazy" 
