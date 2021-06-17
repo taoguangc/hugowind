@@ -6,13 +6,16 @@ hero: hero.jpg
 clients:
   - image: logo-panasonic.png
     url: //panasonic.cn/
-    name: 松下
+    name: Panasonic
   - image: logo-midea.png
     url: //midea.com/cn/
-    name: 美的
+    name: Midea
   - image: logo-colmo.png
     url: //colmo.com.cn/
     name: COLMO
+  - url: //haier.com/
+    image: logo-haier.png
+    name: Haier
 draft: false
 ---
 
