@@ -41,7 +41,7 @@ collections:
             widget: 'list'
             required: false
             fields:
-              - { label: 'Url', name: 'url', widget: 'string' }
+              - { label: 'Url', name: 'url', widget: 'text' }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Company name', name: 'name', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
