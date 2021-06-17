@@ -3,7 +3,7 @@
     <figure class="flex items-center">
       <a href="{{ site.BaseURL }}" class="text-indigo-500 font-bold text-lg">
         {{ with site.Params.logo }}
-        <img src="{{ site.Params.logo | absURL }}" alt="{{site.Title}}" class="h-10 lg:h-15 w-auto">
+        <img src="{{ . | absURL }}" width="160" height="40" alt="{{site.Title}}" class="h-10 lg:h-15 w-auto">
         {{ end }}
       </a>
       <figcaption class="hidden">emptyarea.com</figcaption>
