@@ -36,7 +36,14 @@ collections:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Description', name: 'description', widget: 'string' }
           - { label: 'Hero Image', name: 'hero', widget: 'image' }
-          - { label: 'Images', name: 'images', widget: 'image' }
+          - name: 'clients'
+            label: 'Clients'
+            widget: 'list'
+            required: false
+            fields:
+              - { label: 'Url', name: 'url', widget: 'string' }
+              - { label: 'Image', name: 'image', widget: 'image' }
+              - { label: 'Company name', name: 'name', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
       - file: 'content/about/index.md'
         label: 'About Page'
