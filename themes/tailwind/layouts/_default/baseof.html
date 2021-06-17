@@ -13,7 +13,7 @@
 <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
 {{- end }}
 
-{{- if .IsHome -}}
+{{- if .IsHome }}
 <meta name="description" content="{{ .Site.Params.Description }}">
 <meta property="og:description" content="{{ .Site.Params.Description }}" />
 {{- else }}
