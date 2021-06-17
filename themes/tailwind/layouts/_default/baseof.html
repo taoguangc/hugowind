@@ -13,13 +13,13 @@
 <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
 {{- end }}
 
-{{- if .IsHome }}
+{{- if .IsHome -}}
 <meta name="description" content="{{ .Site.Params.Description }}">
 <meta property="og:description" content="{{ .Site.Params.Description }}" />
 {{- else }}
 <meta name="description" content="{{ .Params.Description }}">
 <meta property="og:description" content="{{ .Params.Description }}" />
-{{- end }}
+{{- end -}}
 
 <!-- Favicon -->
 <link rel="icon" type="image/png" href="/img/icons/favicon-32x32.png" sizes="32x32" />
