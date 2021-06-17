@@ -2,7 +2,7 @@
 title: EmptyArea
 date: 2021-04-13T14:45:26+08:00
 description: We build top-notch custom web and mobile solutions
-images: /uploads/hero.jpg
+hero: hero.jpg
 clients:
   - image: logo-panasonic.png
     url: //panasonic.cn/
@@ -14,7 +14,6 @@ clients:
     url: //colmo.com.cn/
     name: COLMO
 draft: false
-hero: hero.jpg
 ---
 
 {{< rawhtml >}}
