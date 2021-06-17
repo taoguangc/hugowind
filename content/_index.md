@@ -5,8 +5,15 @@ description: We build top-notch custom web and mobile solutions
 images: /uploads/hero.jpg
 clients:
   - client: work/colmo-1.webp
+    image: logo-panasonic.png
+    url: //panasonic.cn/
+    name: 松下
   - client: work/colmo-2.webp
+    url: //midea.com/cn/
+    name: 美的
+    image: logo-midea.png
 draft: false
+hero: hero.jpg
 ---
 
 {{< rawhtml >}}
