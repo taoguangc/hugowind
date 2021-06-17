@@ -13,6 +13,9 @@ clients:
   - image: logo-colmo.png
     url: //colmo.com.cn/
     name: COLMO
+  - url: //haier.com/
+    image: logo-haier.png
+    name: Haier
 draft: false
 hero: hero.jpg
 ---
