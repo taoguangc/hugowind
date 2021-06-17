@@ -12,6 +12,9 @@ clients:
     url: //midea.com/cn/
     name: 美的
     image: logo-midea.png
+  - image: logo-colmo.png
+    url: //colmo.com.cn/
+    name: COLMO
 draft: false
 hero: hero.jpg
 ---
