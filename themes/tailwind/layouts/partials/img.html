@@ -1,7 +1,9 @@
+{{ $headless := .Site.GetPage "/uploads" }}
+
 {{ $src := resources.Get .src }}
 
 {{ $lqipw := default "20x" }}
-{{ $smallw := default "600x" }}
+{{ $smallw := default "640x" }}
 {{ $mediumw := default "960x" }}
 {{ $largew := default "1440x" }}
 
