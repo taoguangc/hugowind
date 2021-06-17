@@ -1,5 +1,6 @@
 {{ define "main" }}
 
+{{ $headless := .Site.GetPage "/uploads" }}
 <section class="mt-0 lg:mt-20 w-full flex-col-reverse lg:flex-row items-center">
   <div class="w-full h-full sm:flex-1 lg:ml-12 z-10 relative" data-sal="slide-up" data-sal-duration="1000">
     <h1 class="px-24 lg:px-0 my-32 lg:m-0 lg:-mr-36 lg:leading-tight">
@@ -12,7 +13,10 @@
     </a>
   </div>
   <div class="w-full sm:flex-1">
-    <img class="w-full" src="img/hero.webp" alt="Panasonic" loading="lazy" decoding="async">
+    {{ range $image := $headless.Resources.Match "hero.jpg" }}
+    {{ $r := $image.Resize "960x webp q75" }}
+    <img class="w-full" src="{{ $r.RelPermalink }}" alt="Hero" loading="lazy" decoding="async">
+    {{ end }}
   </div>
 </section>
 
@@ -24,8 +28,9 @@
       <a class="text-base block duration-700 transform-gpu hover:-translate-y-4" href="{{ .Permalink }}">
         {{ $headless := .Site.GetPage "/uploads" }}
         {{ with .Params.thumb }}
-          {{range ($headless.Resources.Match .)}}
-            <img src="{{ .RelPermalink }}" class="border border-gray-400 shadow-xl hover:shadow-2xl" alt="work-thumb" loading="lazy" decoding="async">
+          {{range $image := $headless.Resources.Match .}}
+            {{ $r := $image.Resize "640x webp q85" }}
+            <img src="{{ $r.RelPermalink }}" class="border border-gray-400 shadow-xl hover:shadow-2xl" alt="work-thumb" loading="lazy" decoding="async">
           {{end}}
         {{end}}
         <h3 class="mt-2 text-lg font-normal">
