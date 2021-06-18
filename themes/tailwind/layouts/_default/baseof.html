@@ -25,16 +25,24 @@
 <link rel="icon" type="image/png" href="/img/icons/favicon-32x32.png" sizes="32x32" />
 <link rel="icon" type="image/svg+xml" href="/img/icons/favicon.svg" sizes="16x16" />
 <link rel="apple-touch-icon" href="/img/icons/apple-touch-icon.png" sizes="180x180" />
+
+<!-- Google fonts -->
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap" media="print" onload="this.media='all'" />
+
+
 {{- $css := resources.Get "css/styles.css" | resources.PostCSS }}
 {{- if .Site.IsServer }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
 {{- else }}
   {{- $styles := $css | minify | resources.PostProcess }}
-  {{- $styles = printf "%s?v=%d" $styles.RelPermalink now.Unix }}
-  <link rel="stylesheet" href="{{ $styles }}">
+
+<!-- Inline css -->
+<style>{{ $styles.Content | safeCSS }}</style>
+
+<!--  {{- $styles = printf "%s?v=%d" $styles.RelPermalink now.Unix }}
+  <link rel="stylesheet" href="{{ $styles }}"> -->
 {{- end }}
 </head>
 <body x-data="{ toTop: false }" @scroll.window="toTop = ( window.pageYOffset > window.innerHeight) ? true : false">
