@@ -39,10 +39,10 @@ x-transition:leave-end="opacity-0 translate-y-16 transform"
 {{- $slice = $slice | append $customJS }}
 {{- end }}
 {{- $bundleJS := $slice | resources.Concat "js/bundle.js" | js.Build (dict "minify" true "target" "es2015") }}
-{{/*- $bundleJS = printf "%s?v=%d" $bundleJS.RelPermalink now.Unix */}}
-{{/* <script src="{{ $bundleJS | safeHTML }}" defer></script> */}}
+{{- $bundleJS = printf "%s?v=%d" $bundleJS.RelPermalink now.Unix }}
+<script src="{{ $bundleJS | safeHTML }}"></script>
 <script>
-{{ $bundleJS.Content | safeJS }}
+{{/* $bundleJS.Content | safeJS */}}
 {{ if .IsHome }}
 const sections = [...document.getElementsByTagName("section"), document.getElementsByTagName("footer")[0]]
 window.addEventListener("scroll", function () {
