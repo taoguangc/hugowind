@@ -43,9 +43,7 @@ x-transition:leave-end="opacity-0 translate-y-16 transform"
 {{/* <script src="{{ $bundleJS | safeHTML }}" defer></script> */}}
 <script>
 {{ $bundleJS.Content | safeJS }}
-</script>
 {{ if .IsHome }}
-<script>
 const sections = [...document.getElementsByTagName("section"), document.getElementsByTagName("footer")[0]]
 window.addEventListener("scroll", function () {
   const scrollFromTop = window.pageYOffset
@@ -57,5 +55,5 @@ window.addEventListener("scroll", function () {
     }
   }
 })
-</script>
 {{ end }}
+</script>
