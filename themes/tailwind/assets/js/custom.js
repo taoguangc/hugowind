@@ -1,5 +1,5 @@
-import sal from 'sal.js'
-sal()
+// import sal from 'sal.js'
+// sal()
 
 // // Smooth scrolling on mouse wheel
 // function SmoothScroll(target, speed, smooth) {
