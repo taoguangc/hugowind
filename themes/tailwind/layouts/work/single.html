@@ -24,12 +24,9 @@
     <div class="mx-auto my-24 max-w-4xl flex flex-col">
       {{ $headless := .Site.GetPage "/uploads" }}
       {{ range .Params.images }}
-        {{ range . }}
-          {{ range $image := $headless.Resources.Match . }}
-            {{ $r := $image.Resize "960x webp q75" }}
-            <img src="{{ $r.RelPermalink }}" class="mt-16 border border-gray-400 shadow-xl hover:shadow-2xl" alt="work-thumb" loading="lazy" decoding="async">
-          {{end}}
-        {{end}}
+        {{ $image := $headless.Resources.GetMatch .image }}
+        {{ $r := $image.Resize "960x webp q75" }}
+        <img src="{{ $r.RelPermalink }}" class="mt-16 border border-gray-400 shadow-xl hover:shadow-2xl" alt="work-thumb" loading="lazy" decoding="async"> 
       {{end}}
     </div>
   </section>

@@ -32235,6 +32235,27 @@ h4 {
   letter-spacing: .1em;
 }
 
+.menu-mobile {
+  z-index: 50;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.menu-mobile:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 640px) {
+  .menu-mobile {
+    display: none;
+  }
+}
+
 .btn {
   border-radius: 9999px;
   border-width: 1px;
