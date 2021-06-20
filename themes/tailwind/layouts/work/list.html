@@ -12,9 +12,9 @@
         {{ $r := $img.Resize "640x webp q85" }}
         <img src="{{ $r.RelPermalink }}" width="{{ $r.Width }}" height="{{ $r.Height }}" class="border border-gray-300 shadow-xl hover:shadow-2xl" alt="work-thumb" />
         {{ end }}
-        <h3 class="mt-2 text-lg font-normal">
+        <p class="mt-4 text-lg font-normal">
           {{ .Title }}
-        </h3>
+        </p>
       </a>
     </div>
     {{ end }}
