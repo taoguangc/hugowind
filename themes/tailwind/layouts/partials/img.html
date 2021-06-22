@@ -1,16 +1,23 @@
-{{ $headless := .Site.GetPage "/uploads" }}
+{{ $image := .image }}
 
-{{ $src := resources.Get .src }}
+{{ $imgSrc := "" }}
+{{ $imgSrcSet := slice }}
 
-{{ $lqipw := default "20x" }}
-{{ $smallw := default "640x" }}
-{{ $mediumw := default "960x" }}
-{{ $largew := default "1440x" }}
+{{ $widths := $.Site.Params.imageWidths }}
 
-{{ $lqip := $src.Resize $lqipw }}
-{{ $small := $src.Resize $smallw }}
-{{ $medium := $src.Resize $mediumw }}
-{{ $large := $src.Resize $largew }}
+{{ range $widths }}
+  {{ $srcUrl := (printf "%dx" . | $image.Resize).RelPermalink }}
+  {{ if eq $imgSrc "" }}{{ $imgSrc = $srcUrl }}{{ end }}
+  {{ $imgSrcSet = $imgSrcSet | append (printf "%s %dw" $srcUrl .) }}
+{{ end }}
+{{ $imgSrcSet = (delimit $imgSrcSet ",") }}
 
-<img srcset="{{ if ge $src.Width $smallw }}{{ with $small.RelPermalink }}{{.}} 600w{{ end }}{{ end }}"
- src="{{ $small.RelPermalink }}" class="max-w-full h-auto" alt="">
+{{ $attributes := slice }}
+{{ range $name, $value := .attrs }}
+  {{ $attributes = $attributes | append (printf "%s=%q" $name $value) }}
+{{ end }}
+{{ $attributes = (delimit $attributes " ") }}
+
+<picture>
+  <img srcset="{{ $imgSrcSet }}" src="{{ $imgSrc }}" {{ print $attributes | safeHTMLAttr }} loading="lazy" decoding="async">
+</picture>

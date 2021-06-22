@@ -38,4 +38,4 @@ description = "This is meta description"
 google_analytics_id = "" # Your ID
 # copyright
 
-imageWidths = [1440, 960, 600]
+imageWidths = [1500, 900, 600]
