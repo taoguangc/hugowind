@@ -18,6 +18,6 @@
 {{ end }}
 {{ $attributes = (delimit $attributes " ") }}
 
-<picture>
+<figure>
   <img srcset="{{ $imgSrcSet }}" src="{{ $imgSrc }}" {{ print $attributes | safeHTMLAttr }} loading="lazy" decoding="async">
-</picture>
+</figure>
