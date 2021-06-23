@@ -13,13 +13,10 @@
     </a>
   </div>
   <div class="w-full sm:flex-1">
-    {{ range $image := $headless.Resources.Match .Params.hero }}
-      {{ partial "img" (dict "Site" $.Site
-        "image" $image
-        "attrs" (dict "class" "w-full"
-          "alt" "Hero" )) }}
+    {{ $img := $headless.Resources.GetMatch .Params.hero }}
+    {{ $r := $img.Resize "960x webp q75" }}
+    <img src="{{ $r.RelPermalink }}" width="{{ $r.Width }}" height="{{ $r.Height }}" class="w-full" alt="Hero" loading="lazy" decoding="async" />
     {{ end }}
-    
   </div>
 </section>
 
@@ -33,7 +30,7 @@
         {{ with .Params.thumb }}
         {{ $img := $headless.Resources.GetMatch . }}
         {{ $r := $img.Resize "640x webp q85" }}
-        <img src="{{ $r.RelPermalink }}" width="{{ $r.Width }}" height="{{ $r.Height }}" class="border border-gray-300 shadow-xl hover:shadow-2xl" alt="work-thumb" />
+        <img src="{{ $r.RelPermalink }}" width="{{ $r.Width }}" height="{{ $r.Height }}" class="border border-gray-300 shadow-xl hover:shadow-2xl" alt="work-thumb" loading="lazy" decoding="async" />
         {{end}}
         <h3 class="mt-2 text-lg font-normal">
           {{ .Title }}
@@ -80,7 +77,7 @@
           {{ end }} 
           alt="{{ .name }}" 
           loading="lazy" 
-          decoding="async">
+          decoding="async" />
         </a>
       </li>
       {{ end }}
