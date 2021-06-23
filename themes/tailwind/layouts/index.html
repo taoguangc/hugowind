@@ -15,8 +15,10 @@
   <div class="w-full sm:flex-1">
     {{ $img := $headless.Resources.GetMatch .Params.hero }}
     {{ $r := $img.Resize "960x webp q75" }}
-    <img src="{{ $r.RelPermalink }}" width="{{ $r.Width }}" height="{{ $r.Height }}" class="w-full" alt="Hero" loading="lazy" decoding="async" />
-    {{ end }}
+    <picture>
+      <source srcset="{{ $r.RelPermalink }}" type="image/webp">
+      <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" class="w-full" alt="Hero" loading="lazy" decoding="async" />
+    </picture>
   </div>
 </section>
 
@@ -26,7 +28,6 @@
     {{ range first 6 (where $.Site.RegularPages "Type" "work").ByDate.Reverse }}
     <div class="p-8 sm:w-1/2">
       <a class="text-base block duration-700 transform-gpu hover:-translate-y-4" href="{{ .Permalink }}">
-        {{ $headless := .Site.GetPage "/uploads" }}
         {{ with .Params.thumb }}
         {{ $img := $headless.Resources.GetMatch . }}
         {{ $r := $img.Resize "640x webp q85" }}

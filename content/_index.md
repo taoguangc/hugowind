@@ -2,6 +2,7 @@
 title: EmptyArea
 date: 2021-04-13T14:45:26+08:00
 description: We build top-notch custom web and mobile solutions
+hero: hero.jpg
 images: /uploads/hero.jpg
 clients:
   - image: logo-panasonic.png
@@ -29,7 +30,6 @@ clients:
     name: Joyoung
     url: //joyoung.com/
 draft: false
-hero: hero.jpg
 ---
 
 {{< rawhtml >}}
