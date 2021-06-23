@@ -16,6 +16,7 @@
     {{ $img := $headless.Resources.GetMatch .Params.hero }}
     {{ $r := $img.Resize "960x webp q75" }}
     <picture>
+      <source srcset="{{ replace $img.RelPermalink ".jpg" ".avif" }}" type="image/avif">
       <source srcset="{{ $r.RelPermalink }}" type="image/webp">
       <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" class="w-full" alt="Hero" loading="lazy" decoding="async" />
     </picture>
