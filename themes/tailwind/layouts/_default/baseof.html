@@ -54,7 +54,6 @@
 {{- $slice = $slice | append $customJS }}
 {{- end }}
 {{- $bundleJS := $slice | resources.Concat "js/bundle.js" | js.Build (dict "minify" true "target" "es2015") }}
-{{- $bundleJS = printf "%s?v=%d" $bundleJS.RelPermalink now.Unix }}
 <script>
 {{ $bundleJS.Content | safeJS }}
 </script>
