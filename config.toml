@@ -4,7 +4,7 @@ title = "emptyarea"
 theme = "tailwind"
 copyright = "Copyright © 2021 Powered by ❤ by "
 assetDir = "static/img"
-
+googleAnalytics = "G-P76JH01PZZ"
 
 # menu
 [[menu.main]]

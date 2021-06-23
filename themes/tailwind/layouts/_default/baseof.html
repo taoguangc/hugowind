@@ -44,6 +44,7 @@
 {{- $styles = printf "%s?v=%d" $styles.RelPermalink now.Unix }}
 {{/* <link rel="preload" as="style" href="{{ $styles }}"> */}}
 {{/* <link rel="stylesheet" href="{{ $styles }}"> */}}
+{{ partial "google_analytics_async.html" . }}
 {{- end }}
 </head>
 <body x-data="{ toTop: false }" @scroll.window="toTop = ( window.pageYOffset > window.innerHeight) ? true : false">
