@@ -39,10 +39,11 @@
   {{- $styles := $css | minify | resources.PostProcess }}
 
 <!-- Inline css -->
-<style>{{ $styles.Content | safeCSS }}</style>
+{{/* <style>{{ $styles.Content | safeCSS }}</style> */}}
 
-{{/*- $styles = printf "%s?v=%d" $styles.RelPermalink now.Unix */}}
-{{/*<link rel="stylesheet" href="{{ $styles }}">*/}}
+{{- $styles = printf "%s?v=%d" $styles.RelPermalink now.Unix }}
+<link rel="preload" as="style" href="{{ $styles }}">
+<link rel="stylesheet" href="{{ $styles }}">
 {{- end }}
 </head>
 <body x-data="{ toTop: false }" @scroll.window="toTop = ( window.pageYOffset > window.innerHeight) ? true : false">
