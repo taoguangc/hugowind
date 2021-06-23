@@ -14,8 +14,9 @@
   </div>
   <div class="w-full sm:flex-1">
     {{ range $image := $headless.Resources.Match .Params.hero }}
-    {{ $r := $image.Resize "960x webp q75" }}
-    <img src="{{ $r.RelPermalink }}" width="{{ $r.Width }}" height="{{ $r.Height }}" class="w-full" alt="Hero" loading="lazy" decoding="async">
+    {{ partial "img" (dict "Site" $.Site
+      "image" $image
+      "attrs" (dict "class" "w-full" )) }}
     {{ end }}
   </div>
 </section>
@@ -28,13 +29,9 @@
       <a class="text-base block duration-700 transform-gpu hover:-translate-y-4" href="{{ .Permalink }}">
         {{ $headless := .Site.GetPage "/uploads" }}
         {{ with .Params.thumb }}
-          {{range $image := $headless.Resources.Match .}}
-            
-            {{ partial "img" (dict "Site" $.Site
-              "image" $image
-              "attrs" (dict "class" "border border-gray-400 shadow-xl hover:shadow-2xl" )) }}
-
-          {{end}}
+        {{ $img := $headless.Resources.GetMatch . }}
+        {{ $r := $img.Resize "640x webp q85" }}
+        <img src="{{ $r.RelPermalink }}" width="{{ $r.Width }}" height="{{ $r.Height }}" class="border border-gray-300 shadow-xl hover:shadow-2xl" alt="work-thumb" />
         {{end}}
         <h3 class="mt-2 text-lg font-normal">
           {{ .Title }}
