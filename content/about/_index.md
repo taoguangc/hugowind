@@ -1,5 +1,5 @@
 ---
-title: About
+title: About me
 date: 2021-04-13T14:45:34+08:00
 avatar: img/about/img_about.jpg
 services:
@@ -11,6 +11,7 @@ services:
   - JS/CSS Animation
 draft: false
 ---
+
 ### Hi, I'm Jeffrey Q
 I'm a front end developer and UI/UX designer from China. I have been working with clients from around the globe creating bespoke websites, brands.
 

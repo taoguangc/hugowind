@@ -87,6 +87,14 @@ ul.services li {
   background-position: 0 50%;
 }
 
+label {
+  @apply block mb-2;
+}
+
+input, textarea {
+  @apply w-full px-4 py-3 border rounded;
+}
+
 [data-sal] {
   transition-delay: 0s;
   transition-delay: var(--sal-delay, 0s);

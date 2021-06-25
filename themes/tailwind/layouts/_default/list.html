@@ -1,8 +1,6 @@
 {{ define "main" }}
-  <div class="mt-10 mx-auto px-6 lg:px-16 lg:max-w-4xl">
-    <article>
-      <h1 class="text-left text-7xl tracking-tight mb-24">{{ .Title }}</h1>
-      {{ .Content }}
-    </article>
-  </div>
+  <article class="mx-auto my-48 px-6 lg:px-16 lg:max-w-7xl">
+    <h1 class="text-7xl font-medium tracking-normal uppercase mb-24">{{ .Title }}</h1>
+    {{ .Content }}
+  </article>
 {{ end }}

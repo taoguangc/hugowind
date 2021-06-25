@@ -1,6 +1,6 @@
 {{ define "main" }}
   <article class="mx-auto my-48 container px-6 lg:px-16">
-    <h1 class="text-left text-7xl font-medium tracking-normal uppercase my-24">{{ .Title }}</h1>
+    <h1 class="text-7xl font-medium tracking-normal uppercase my-24">{{ .Title }}</h1>
     <section class="flex flex-col lg:flex-row">
       <div class="lg:w-1/2">
         <figure>
@@ -15,22 +15,6 @@
             <li>{{ . }}</li>
           {{ end }}
         </ul>
-        <form name="contact" method="post" data-netlify="true">
-          <p>
-            <label>Your Name: <input type="text" name="name"/></label>
-          </p>
-          <p>
-            <label>Your Email: <input type="email" name="email"/></label>
-          </p>
-          <p>
-            <label>Message:
-              <textarea name="message"></textarea>
-            </label>
-          </p>
-          <p>
-            <button class="btn" type="submit">Send</button>
-          </p>
-        </form>
       </div>
     </section>
   </article>

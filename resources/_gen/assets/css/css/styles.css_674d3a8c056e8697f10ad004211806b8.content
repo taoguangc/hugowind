@@ -1,4 +1,4 @@
-/*! tailwindcss v2.2.0 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v2.2.4 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -330,16 +330,6 @@ pre {
 button {
   background-color: transparent;
   background-image: none;
-}
-
-/**
- * Work around a Firefox/IE bug where the transparent `button` background
- * results in a loss of the default `button` focus styles.
- */
-
-button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
 }
 
 fieldset {
@@ -32355,6 +32345,21 @@ ul.services li {
   background-image: url(../../img/arrow-right.svg);
   background-size: auto 25%;
   background-position: 0 50%;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+input, textarea {
+  width: 100%;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 [data-sal] {
