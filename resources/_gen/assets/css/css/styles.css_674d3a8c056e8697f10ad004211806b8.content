@@ -32280,6 +32280,12 @@ h4 {
   transition-duration: 150ms;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  background-color: #000;
+}
+
+.btn footer figure svg {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 .btn {
@@ -32360,6 +32366,23 @@ input, textarea {
   padding-right: 1rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.bg-antique {
+  background-color: #f3e7df;
+}
+
+.bg-blue {
+  background-color: #c3cfd7;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-black footer figure svg {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 [data-sal] {

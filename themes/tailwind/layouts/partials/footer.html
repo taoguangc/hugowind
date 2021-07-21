@@ -1,14 +1,15 @@
 {{ if .IsHome }}
-<footer class="w-full flex flex-col" data-bg="#000">
+<footer class="w-full flex flex-col" data-bg="black">
 {{ else }}
 <footer class="w-full flex flex-col bg-black">
 {{ end }}
   <div class="container p-12">
     <figure class="flex items-center">
       <a href="{{ site.BaseURL }}" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="700">
-        {{ with site.Params.logo }}
-        <img src="{{ site.Params.logo_light | absURL }}" width="48" height="36" alt="{{site.Title}}" class="w-12">
-        {{ end }}
+        <svg width="60" height="45" viewBox="0 0 60 45" fill="none" class="{{ if .IsHome }}text-black{{ else }}text-white{{ end }}" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 0H60L52.5 15H52.0639C51.1738 12.8011 49.018 11.25 46.5 11.25H13.5C10.1863 11.25 7.5 13.9363 7.5 17.25V22V27.75C7.5 31.0637 10.1863 33.75 13.5 33.75H46.5C49.018 33.75 51.1738 32.1989 52.0639 30H52.5L60 45H7.5H0V0H7.5Z" fill="none" class="fill-current" />
+        <rect x="13" y="16" width="33" height="12" rx="3" fill="none" class="fill-current" />
+        </svg>
       </a>
       <figcaption class="hidden">emptyarea.com</figcaption>
     </figure>
@@ -50,7 +51,7 @@ window.addEventListener("scroll", function () {
   for (let i = 0; sections.length > i; i++) {
     const half = window.innerHeight / 2
     if (scrollFromTop < sections[i].offsetTop + half) {
-      document.body.style.backgroundColor = sections[i].getAttribute("data-bg")
+      document.body.className = "bg-" + sections[i].getAttribute("data-bg")
       break
     }
   }

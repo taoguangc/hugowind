@@ -95,6 +95,22 @@ input, textarea {
   @apply w-full px-4 py-3 border rounded;
 }
 
+.bg-antique {
+  background-color: #f3e7df;
+}
+
+.bg-blue {
+  background-color: #c3cfd7;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-black footer figure svg {
+  @apply text-white;
+}
+
 [data-sal] {
   transition-delay: 0s;
   transition-delay: var(--sal-delay, 0s);
