@@ -10,7 +10,7 @@ images:
   - image: work/donaldson-3.jpg
   - image: work/donaldson-4.jpg
 client: Donaldson
-project_url: https://donaldson.cn/
+project_url: http://www.donaldson.cn/
 categories:
   - Design
   - Code
