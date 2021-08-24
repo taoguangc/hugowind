@@ -7,7 +7,7 @@ images:
   - image: work/colmo-1.webp
   - image: work/colmo-2.webp
 client: COLMO
-project_url: https://clomo.com/
+project_url: https://colmo.com.cn/
 thumb: work/colmo-thumb.webp
 categories:
   - Design
