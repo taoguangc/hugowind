@@ -7,7 +7,7 @@ thumb: work/dachoo-thumb.webp
 images:
   - image: work/dachoo-1.jpg
 client: Robam
-project_url: https://dachoo.robam.com/
+project_url: https://dachoo.robam.com/public/
 categories:
   - Design
   - Code
