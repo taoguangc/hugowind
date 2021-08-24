@@ -11,6 +11,7 @@ project_url: ""
 categories:
   - Design
   - Code
+qr_code: work/nespresso-thumb.webp
 ---
 
 #### Project Details
