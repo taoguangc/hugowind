@@ -3,12 +3,12 @@ draft: false
 title: COLMO
 date: 2019-04-20T12:14:34+06:00
 description: This is meta description.
+thumb: work/colmo-thumb.webp
 images:
   - image: work/colmo-1.webp
   - image: work/colmo-2.webp
 client: COLMO
-project_url: https://colmo.com.cn/
-thumb: work/colmo-thumb.webp
+project_url: https://www.colmo.com.cn/
 categories:
   - Design
   - Code
