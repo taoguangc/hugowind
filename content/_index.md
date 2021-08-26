@@ -2,31 +2,31 @@
 title: Emptyarea
 date: 2021-04-13T14:45:26+08:00
 description: We build top-notch custom web and mobile solutions
-hero: hero.jpg
+hero: img/hero.jpg
 images: /uploads/hero.jpg
 clients:
-  - image: logo-panasonic.png
+  - image: img/logo-panasonic.png
     url: //panasonic.cn/
     name: Panasonic
-  - image: logo-midea.png
+  - image: img/logo-midea.png
     url: //midea.com/cn/
     name: Midea
-  - image: logo-colmo.png
+  - image: img/logo-colmo.png
     url: //colmo.com.cn/
     name: COLMO
   - url: //haier.com/
-    image: logo-haier.png
+    image: img/logo-haier.png
     name: Haier
   - url: https://tcl.com/
-    image: logo-tcl.png
+    image: img/logo-tcl.png
     name: TCL
-  - image: logo-whirlpool.png
+  - image: img/logo-whirlpool.png
     url: //whirlpool.com.cn/
     name: Whirlpool
   - url: //robam.com/
-    image: logo-robam.png
+    image: img/logo-robam.png
     name: ROBAM
-  - image: logo-joyoung.png
+  - image: img/logo-joyoung.png
     name: Joyoung
     url: //joyoung.com/
 draft: false

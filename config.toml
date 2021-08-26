@@ -44,3 +44,12 @@ google_analytics_id = "" # Your ID
 # copyright
 
 imageWidths = [1500, 900, 600]
+
+[module]
+[[module.mounts]]
+source = "assets"
+target = "assets"
+
+[[module.mounts]]
+source = "static/img"
+target = "assets/img"

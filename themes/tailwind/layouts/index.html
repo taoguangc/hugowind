@@ -1,6 +1,5 @@
 {{ define "main" }}
 
-{{ $headless := .Site.GetPage "/uploads" }}
 <section class="mt-0 lg:mt-20 w-full flex-col-reverse lg:flex-row items-center">
   <div class="w-full h-full sm:flex-1 lg:ml-12 z-10 relative" data-sal="slide-up" data-sal-duration="1000">
     <h1 class="lg:px-24 my-32 lg:m-0 lg:-mr-36 lg:leading-tight">
@@ -13,13 +12,15 @@
     </a>
   </div>
   <div class="w-full sm:flex-1">
-    {{ $img := $headless.Resources.GetMatch .Params.hero }}
+    {{ with .Params.hero }}
+    {{ $img := resources.Get . }}
     {{ $r := $img.Resize "960x webp q75" }}
     <picture>
       <source srcset="{{ replace $img.RelPermalink ".jpg" ".avif" }}" type="image/avif">
       <source srcset="{{ $r.RelPermalink }}" type="image/webp">
       <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" class="w-full" alt="Hero" loading="lazy" decoding="async" />
     </picture>
+    {{end}}
   </div>
 </section>
 
@@ -30,7 +31,7 @@
     <div class="p-8 sm:w-1/2" data-sal="slide-up-2" data-sal-duration="700">
       <a class="text-base block duration-700 transform-gpu hover:-translate-y-4" href="{{ .Permalink }}">
         {{ with .Params.thumb }}
-        {{ $img := $headless.Resources.GetMatch . }}
+        {{ $img := resources.Get . }}
         {{ $r := $img.Resize "640x webp q85" }}
         <img src="{{ $r.RelPermalink }}" width="{{ $r.Width }}" height="{{ $r.Height }}" class="border border-gray-300 shadow-xl hover:shadow-2xl" alt="work-thumb" loading="lazy" decoding="async" />
         {{end}}
@@ -72,10 +73,10 @@
       <li data-sal="slide-up" data-sal-duration="1000" data-sal-delay="100">  
         <a href="{{ .url }}">
           <img 
-          {{ range $image := $headless.Resources.Match (print "**" .image) }}
+          {{ with $img := resources.Get .image }}
           src="{{ .RelPermalink }}" 
-          width="{{ $image.Width }}" 
-          height="{{ $image.Height }}" 
+          width="{{ $img.Width }}" 
+          height="{{ $img.Height }}" 
           {{ end }} 
           alt="{{ .name }}" 
           loading="lazy" 

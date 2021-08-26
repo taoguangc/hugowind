@@ -3,14 +3,15 @@ draft: false
 title: Donaldson
 date: 2019-06-20T12:14:34+06:00
 description: This is meta description.
-thumb: work/donaldson-thumb.webp
+thumb: img/work/donaldson-thumb.webp
 images:
-  - image: work/donaldson-1.jpg
-  - image: work/donaldson-2.jpg
-  - image: work/donaldson-3.jpg
-  - image: work/donaldson-4.jpg
+  - image: img/work/donaldson-1.jpg
+  - image: img/work/donaldson-2.jpg
+  - image: img/work/donaldson-3.jpg
+  - image: img/work/donaldson-4.jpg
 client: Donaldson
 project_url: https://www.donaldson.cn/
+qr_code: img/work/nespresso-thumb.webp
 categories:
   - Design
   - Code

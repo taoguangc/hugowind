@@ -3,11 +3,12 @@ draft: false
 title: Midea Smart Home
 date: 2019-01-20T12:14:34+06:00
 description: This is meta description.
-thumb: work/msmart-thumb.webp
+thumb: img/work/msmart-thumb.webp
 images:
-  - image: work/msmart-1.jpg
+  - image: img/work/msmart-1.jpg
 client: Midea
 project_url: null
+qr_code: img/work/nespresso-thumb.webp
 categories:
   - Design
   - Code

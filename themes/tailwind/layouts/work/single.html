@@ -10,12 +10,6 @@
       {{ with .Params.project_url }}
       <li>URL: <a href="{{ . }}" class="underline">{{ . }}</a></li>
       {{end}}
-      {{ $headless := .Site.GetPage "/uploads" }}
-      {{ with .Params.qr_code }}
-      {{ $img := resources.Get . }}
-      {{ $r := $img.Resize "240x webp q85" }}
-      <li><img src="{{ $r.RelPermalink }}" width="{{ $r.Width }}" height="{{ $r.Height }}" alt="Qr-code" loading="lazy" decoding="async" /></li>
-      {{end}}
     </ul>
     <div class="w-full mt-8 lg:mt-0 lg:w-1/2">
       {{ .Content }}
@@ -24,6 +18,7 @@
   
   <section class="bg-gray-100">
     <div class="mx-auto my-24 max-w-4xl flex flex-col">
+      {{ $headless := .Site.GetPage "/uploads" }}
       {{ range .Params.images }}
         {{ $image := $headless.Resources.GetMatch .image }}
         {{ partial "img" (dict "Site" $.Site 

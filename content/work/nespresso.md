@@ -3,15 +3,15 @@ draft: false
 title: Nespresso
 date: 2020-05-12T06:14:00.000Z
 description: This is meta description.
-thumb: work/nespresso-thumb.webp
+thumb: img/work/nespresso-thumb.webp
 images:
-  - image: work/nespresso-thumb.webp
+  - image: img/work/nespresso-thumb.webp
 client: Nespresso
 project_url: ""
+qr_code: img/work/nespresso-thumb.webp
 categories:
   - Design
   - Code
-qr_code: work/nespresso-thumb.webp
 ---
 
 #### Project Details
