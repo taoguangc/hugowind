@@ -11,6 +11,7 @@
   for = "/*"
 
 [headers.values]
+  Content-Security-Policy = "default-src 'https:'; img-src 'self'; media-src 'self'; base-uri 'https://emptyarea.com'; frame-ancestors 'none'"
   Referrer-Policy = "same-origin"
   Strict-Transport-Security = "max-age=15768000"
   X-Content-Type-Options = "nosniff"
