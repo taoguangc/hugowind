@@ -11,7 +11,7 @@
   for = "/*"
 
 [headers.values]
-  Content-Security-Policy = "default-src 'none'; img-src 'self'; media-src 'self'; font-src https://fonts.googleapis.com; object-src 'none'; script-src 'self' https://www.google-analytics.com; style-src 'self'; frame-ancestors 'none'"
+  # Content-Security-Policy = "default-src 'none'; img-src 'self'; media-src 'self'; font-src https://fonts.gstatic.com https://fonts.googleapis.com; object-src 'none'; script-src 'self' https://www.google-analytics.com; style-src 'self'; frame-ancestors 'none'"
   Referrer-Policy = "same-origin"
   Strict-Transport-Security = "max-age=15768000"
   X-Content-Type-Options = "nosniff"
