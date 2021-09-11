@@ -10,7 +10,7 @@ images:
   - image: img/work/donaldson-3.jpg
   - image: img/work/donaldson-4.jpg
 client: Donaldson
-project_url: https://www.donaldson.cn/
+project_url: http://www.donaldson.cn/zh-cn/
 qr_code: img/work/nespresso-thumb.webp
 categories:
   - Design
