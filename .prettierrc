@@ -1,7 +1,7 @@
 {
   "tabWidth": 2,
   "useTabs": false,
-  "printWidth": 3000, // 增加换行长度
+  "printWidth": 150,
   "proseWrap": "never",
   "arrowParens": "avoid",
   "semi": false,
