@@ -1,0 +1,9 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "printWidth": 3000, // 增加换行长度
+  "proseWrap": "never",
+  "arrowParens": "avoid",
+  "semi": false,
+  "eslintIntegration": false
+}
