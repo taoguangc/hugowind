@@ -33,19 +33,14 @@
 
 
 {{- $css := resources.Get "css/styles.css" | resources.PostCSS }}
-{{- if .Site.IsServer }}
-  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
-{{- else }}
-  {{- $styles := $css | minify | resources.PostProcess }}
-
-<!-- Inline css -->
-<style>{{ $styles.Content | safeCSS }}</style>
-
-{{- $styles = printf "%s?v=%d" $styles.RelPermalink now.Unix }}
-{{/* <link rel="preload" as="style" href="{{ $styles }}"> */}}
-{{/* <link rel="stylesheet" href="{{ $styles }}"> */}}
+{{ if hugo.IsProduction }}
+  {{ $css = $css | minify | fingerprint | resources.PostProcess }}
+{{- else if .Site.IsServer }}
+  {{ $css = $css | resources.ExecuteAsTemplate (printf "css/styles.dev.%v.css" now.UnixMilli) .}}
+{{ end }}
+<link rel="preload" as="style" href="{{ $css }}">
+<link href="{{ $css.RelPermalink }}" rel="stylesheet" />
 {{ partial "google_analytics_async.html" . }}
-{{- end }}
 </head>
 <body x-data="{ toTop: false }" @scroll.window="toTop = ( window.pageYOffset > window.innerHeight) ? true : false">
 {{ partial "header.html" . -}}
