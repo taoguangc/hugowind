@@ -38,7 +38,6 @@
 {{- else if .Site.IsServer }}
   {{ $css = $css | resources.ExecuteAsTemplate (printf "css/styles.dev.%v.css" now.UnixMilli) .}}
 {{ end }}
-<link rel="preload" as="style" href="{{ $css }}">
 <link href="{{ $css.RelPermalink }}" rel="stylesheet" />
 {{ partial "google_analytics_async.html" . }}
 </head>

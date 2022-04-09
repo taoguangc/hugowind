@@ -1,12 +1,5 @@
 module.exports = {
-  purge: {
-    enabled: process.env.HUGO_ENVIRONMENT === "production",
-    content: ["./content/**/*.md", "./content/**/*.html", "./themes/tailwind/layouts/**/*.html"],
-    options: {
-      whitelist: [],
-    },
-  },
-  darkMode: false,
+  content: ['./themes/**/*.html', './content/**/*.md'],
   theme: {
     container: {
       center: true,
@@ -39,11 +32,6 @@ module.exports = {
       transitionProperty: {
         'width': 'width',
       }
-    },
-  },
-  variants: {
-    extend: {
-      width: ['group-hover'],
     },
   },
   plugins: [],
