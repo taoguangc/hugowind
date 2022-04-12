@@ -34,6 +34,7 @@
   {{ end }}
   <link href="{{ $css.RelPermalink }}" rel="stylesheet" />
   {{ partial "google_analytics_async.html" . }}
+  <script defer src="https://unpkg.com/alpinejs/dist/cdn.min.js"></script>
 </head>
 
 <body x-data="{ toTop: false }" @scroll.window="toTop = ( window.pageYOffset > window.innerHeight) ? true : false">
