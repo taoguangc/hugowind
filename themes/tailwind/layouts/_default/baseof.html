@@ -23,8 +23,9 @@
   <link rel="icon" type="image/svg+xml" href="/img/icons/favicon.svg" sizes="16x16" />
   <link rel="apple-touch-icon" href="/img/icons/apple-touch-icon.png" sizes="180x180" />
   <!-- Google fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
   <link rel="preconnect" href="https://unpkg.com" />
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap" media="print" onload="this.media='all'" />
   {{- $css := resources.Get "css/styles.css" | resources.PostCSS }}
@@ -35,8 +36,8 @@
   {{ end }}
  
   <link href="{{ $css.RelPermalink }}" rel="stylesheet" />
-  {{ partial "google_analytics_async.html" . }}
   <script defer src="https://unpkg.com/alpinejs/dist/cdn.min.js"></script>
+  {{ partial "google_analytics_async.html" . }}
 </head>
 
 <body x-data="{ toTop: false }" @scroll.window="toTop = ( window.pageYOffset > window.innerHeight) ? true : false">
