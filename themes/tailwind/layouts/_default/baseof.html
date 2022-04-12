@@ -28,10 +28,11 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap" media="print" onload="this.media='all'" />
   {{- $css := resources.Get "css/styles.css" | resources.PostCSS }}
   {{ if hugo.IsProduction }}
-  {{ $css = $css | minify | fingerprint | resources.PostProcess | first 8 }}
-  {{- else if .Site.IsServer }}
+  {{ $css = $css | minify | fingerprint "md5" | resources.PostProcess }}
+  {{ else if .Site.IsServer }}
   {{ $css = $css | resources.ExecuteAsTemplate (printf "css/styles.dev.%v.css" now.Unix) .}}
   {{ end }}
+ 
   <link href="{{ $css.RelPermalink }}" rel="stylesheet" />
   {{ partial "google_analytics_async.html" . }}
   <script defer src="https://unpkg.com/alpinejs/dist/cdn.min.js"></script>
