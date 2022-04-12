@@ -18,7 +18,7 @@
     <picture>
       <source srcset="{{ replace $img.RelPermalink ".jpg" ".avif" }}" type="image/avif">
       <source srcset="{{ $r.RelPermalink }}" type="image/webp">
-      <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" class="w-full" alt="Hero" loading="lazy" decoding="async" />
+      <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" class="w-full" alt="Hero" decoding="async" />
     </picture>
     {{end}}
   </div>
