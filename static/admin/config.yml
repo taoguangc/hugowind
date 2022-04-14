@@ -33,7 +33,12 @@ collections:
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Description', name: 'description', widget: 'string' }
-          - { label: 'Hero Image', name: 'hero', widget: 'image' }
+          - label: 'Hero Image'
+            name: 'hero'
+            widget: 'image'
+            media_library:
+              config:
+                multiple: true
           - name: 'clients'
             label: 'Clients'
             widget: 'list'
