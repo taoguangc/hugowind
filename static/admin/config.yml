@@ -36,10 +36,13 @@ collections:
           - label: 'Hero Image'
             name: 'hero'
             widget: 'image'
-            allow_multiple: true
             media_library:
+              name: cloudinary
               config:
+                cloud_name: taoguang
+                api_key: 578759565235523
                 multiple: true
+            allow_multiple: true
           - name: 'clients'
             label: 'Clients'
             widget: 'list'
