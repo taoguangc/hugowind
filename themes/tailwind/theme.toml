@@ -11,8 +11,8 @@ features = []
 min_version = "0.83.1"
 
 [author]
-  name = ""
-  homepage = ""
+  name = "taoguangc"
+  homepage = "//emptyarea.com"
 
 # If porting an existing theme
 [original]
